@@ -11,25 +11,27 @@ A movie library web application built using the MERN stack. Users can search for
 
 ## Setup Instructions
 
-### Backend
+### Frontend
 
-1. Navigate to the backend directory:
+1. Navigate to the frontend directory:
     ```bash
-    cd backend
+    cd frontend
     ```
 
-2. Create a `.env` file and add the following environment variables:
+2. Create a `.env` file and add the following environment variable:
     ```
-    MONGO_URI=mongodb://localhost:27017/movielibrary
-    JWT_SECRET=your_jwt_secret
-    OMDB_API_KEY=your_omdb_api_key
-    PORT=5000
+    REACT_APP_API_URL=http://localhost:5000/api
     ```
 
-3. Install dependencies and start the server:
+3. Install dependencies and start the client:
     ```bash
     npm install
-    npm start
+    npm run dev
     ```
 
+4. Open your browser and navigate to `http://localhost:3000`.
 
+## Usage
+- Sign up or log in to your account.
+- Search for movies using the search bar.
+- Create and manage your movie lists from the home page.
